@@ -1,0 +1,77 @@
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: "added camunda platform architecture diagram"
+    - kind: added
+      description: "support using custom key for keycloak existing secret"
+    - kind: added
+      description: "support custom keycloak context path"
+    - kind: fixed
+      description: "use service for keycloak instead of host"
+    - kind: fixed
+      description: "put keycloak section under identity in NOTES.txt"
+    - kind: fixed
+      description: "set keycloak proxy to global ingress tls"
+  artifacthub.io/containsSecurityUpdates: "false"
+  artifacthub.io/links: |
+    - name: Camunda Platform 8 docs
+      url: https://docs.camunda.io/
+    - name: Camunda Platform 8 Self-Managed docs
+      url: https://docs.camunda.io/docs/self-managed/about-self-managed/
+    - name: Camunda Platform 8 Self-Managed Helm charts
+      url: https://github.com/camunda/camunda-platform-helm
+apiVersion: v2
+appVersion: 8.1.x
+dependencies:
+- condition: identity.enabled
+  name: identity
+  repository: ""
+  version: 8.1.1
+- condition: operate.enabled
+  name: operate
+  repository: ""
+  version: 8.1.1
+- condition: optimize.enabled
+  name: optimize
+  repository: ""
+  version: 8.1.1
+- condition: tasklist.enabled
+  name: tasklist
+  repository: ""
+  version: 8.1.1
+- condition: zeebe.enabled
+  name: zeebe
+  repository: ""
+  version: 8.1.1
+- condition: zeebe.enabled
+  name: zeebe-gateway
+  repository: ""
+  version: 8.1.1
+- condition: elasticsearch.enabled
+  name: elasticsearch
+  repository: https://helm.elastic.co
+  version: 7.17.1
+- name: common
+  repository: https://charts.bitnami.com/bitnami
+  version: 2.x.x
+description: 'Camunda Platform 8 Self-Managed Helm charts. Camunda''s process automation
+  platform allows developers to design, automate and improve processes. '
+home: https://docs.camunda.io/docs/self-managed/overview/
+icon: https://helm.camunda.io/imgs/camunda.svg
+keywords:
+- bpm
+- bpmn
+- camunda-platform
+- dmn
+- process-engine
+- workflow
+maintainers:
+- email: christopher.zell@camunda.com
+  name: Zelldon
+- email: ahmed.abouzaid@camunda.com
+  name: aabouzaid
+name: camunda-platform
+sources:
+- https://github.com/camunda/camunda-platform-helm
+type: application
+version: 8.1.1

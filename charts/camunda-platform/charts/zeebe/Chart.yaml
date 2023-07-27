@@ -1,0 +1,10 @@
+annotations:
+  artifacthub.io/changes: |
+    - rewrite zeebe chart
+  artifacthub.io/containsSecurityUpdates: "false"
+apiVersion: v2
+description: Zeebe Helm Chart for Kubernetes
+icon: https://helm.camunda.io/imgs/camunda.svg
+name: zeebe
+type: application
+version: 8.1.1

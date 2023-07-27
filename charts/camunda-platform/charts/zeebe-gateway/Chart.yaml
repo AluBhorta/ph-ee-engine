@@ -1,0 +1,10 @@
+annotations:
+  artifacthub.io/changes: |
+    - add zeebe-gateway sub chart
+  artifacthub.io/containsSecurityUpdates: "false"
+apiVersion: v2
+description: Zeebe Gateway Helm Chart for Kubernetes
+icon: https://helm.camunda.io/imgs/camunda.svg
+name: zeebe-gateway
+type: application
+version: 8.1.1

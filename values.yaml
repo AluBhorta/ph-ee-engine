@@ -518,7 +518,8 @@ ph_ee_connector_mojaloop:
 operations_app:
   enabled: true
   replicas: 1
-  image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/ph-ee-ops-bk"
+  # image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/ph-ee-ops-bk"
+  image: "lalithkota/ph-ee-operations-app"
   imageTag: "v1.4.0"
   imagePullPolicy: "Always"
   SPRING_PROFILES_ACTIVE: "bb"
@@ -614,7 +615,8 @@ operations_app:
 operations_web:
   enabled: true
   replicas: 1
-  image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/phee-ops-web"
+  # image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/phee-ops-web"
+  image: "lalithkota/ph-ee-operations-web"
   imageTag: "v1.3.2"
   imagePullPolicy: "Always"
   imagePullSecrets: []
@@ -1123,7 +1125,8 @@ messagegateway:
 notifications:
   enabled: true
   replicas: 1
-  image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/ph-ee-notifications"
+  # image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/ph-ee-notifications"
+  image: "lalithkota/ph-ee-notifications"
   imageTag: "v1.1.0"
   imagePullPolicy: "Always"
   SPRING_PROFILES_ACTIVE: "bb"
@@ -1315,7 +1318,8 @@ zeebe_ops:
 importer_es:
   enabled: true
   replicas: 1
-  image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/ph-es-importer"
+  # image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/ph-es-importer"
+  image: "lalithkota/ph-ee-importer-es"
   imageTag: "v1.4.0"
   imagePullPolicy: "Always"
   importer_elasticsearch_url: "http://ph-ee-elasticsearch:9200/"
@@ -1452,7 +1456,8 @@ kafka:
 importer_rdbms:
   enabled: true
   replicas: 1
-  image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/phee-importer-rdbms"
+  # image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/phee-importer-rdbms"
+  image: "lalithkota/ph-ee-importer-rdbms"
   imageTag: "v1.3.1"
   imagePullPolicy: "Always"
   LOGGING_LEVEL_ROOT: "INFO"

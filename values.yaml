@@ -1900,7 +1900,7 @@ mock_oracle:
     annotations: {}
 
 keycloak:
-  enabled: false
+  enabled: true
 # Enabling this will publicly expose your keycloak instance.
 # Only enable this if you have security enabled on your cluster   
   ingress:
@@ -2038,7 +2038,7 @@ kong:
         scope: openid
 
 keycloak:
-  enabled: true
+  enabled: false
 # Enabling this will publicly expose your keycloak instance.
 # Only enable this if you have security enabled on your cluster
   ingress:

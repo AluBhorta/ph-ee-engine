@@ -520,7 +520,7 @@ operations_app:
   replicas: 1
   # image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/ph-ee-ops-bk"
   image: "lalithkota/ph-ee-operations-app"
-  imageTag: "v1.4.0"
+  imageTag: "latest"
   imagePullPolicy: "Always"
   SPRING_PROFILES_ACTIVE: "bb"
   LOGGING_LEVEL_ROOT: "INFO"
@@ -617,7 +617,7 @@ operations_web:
   replicas: 1
   # image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/phee-ops-web"
   image: "lalithkota/ph-ee-operations-web"
-  imageTag: "v1.3.2"
+  imageTag: "latest"
   imagePullPolicy: "Always"
   imagePullSecrets: []
   webhost: ""
@@ -1127,7 +1127,7 @@ notifications:
   replicas: 1
   # image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/ph-ee-notifications"
   image: "lalithkota/ph-ee-notifications"
-  imageTag: "v1.1.0"
+  imageTag: "latest"
   imagePullPolicy: "Always"
   SPRING_PROFILES_ACTIVE: "bb"
   LOGGING_LEVEL_ROOT: "INFO"
@@ -1320,7 +1320,7 @@ importer_es:
   replicas: 1
   # image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/ph-es-importer"
   image: "lalithkota/ph-ee-importer-es"
-  imageTag: "v1.4.0"
+  imageTag: "latest"
   imagePullPolicy: "Always"
   importer_elasticsearch_url: "http://ph-ee-elasticsearch:9200/"
   reporting:
@@ -1458,7 +1458,7 @@ importer_rdbms:
   replicas: 1
   # image: "419830066942.dkr.ecr.ap-south-1.amazonaws.com/phee-importer-rdbms"
   image: "lalithkota/ph-ee-importer-rdbms"
-  imageTag: "v1.3.1"
+  imageTag: "latest"
   imagePullPolicy: "Always"
   LOGGING_LEVEL_ROOT: "INFO"
   LOGGING_PATTERN_CONSOLE: "%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n"

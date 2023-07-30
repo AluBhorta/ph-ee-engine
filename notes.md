@@ -8,6 +8,7 @@
   - install needed helm repos
   - update image tags from latest to specific versions as in docker hub
   - replace `keycloak` service to enable the one with mounted volume
+  - change pdb api version in templates under charts/
 - latest errors
   - pod `ph-ee-connector-gsma-abc-def` → `configmap "ph-ee-config" not found`
   - pod `ph-ee-importer-rdbms-abc-def` → `configmap "ph-ee-config" not found`
